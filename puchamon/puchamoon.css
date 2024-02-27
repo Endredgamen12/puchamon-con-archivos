@@ -1,0 +1,454 @@
+text{
+    font-family: "pokemon2";
+}
+body{
+background-image: url("./fondopuchamon2.jpg");
+background-size: 1800px 1397px;
+background-repeat: no-repeat;
+box-sizing: border-box;
+}
+@font-face {
+  font-family: "pokemon";
+  src: url("Pokemon GB.ttf");
+  font-weight: bold;
+  font-style: bold;
+}
+@font-face {
+  font-family: "pokemon2";
+  src: url("Pokemon Solid.ttf");
+  font-weight: bold;
+  font-style: bold;
+}
+#boton-reiniciar{
+  font-family: "pokemon";
+  margin: 7px;
+  color: white;
+  background-color: black;
+  box-sizing: border-box;
+  padding:  5px;
+  width: 10%;
+  border: solid;
+  border-radius:20px;
+  border-color: red;
+  cursor: pointer;
+}
+#boton-reiniciar:hover{
+  font-family: "pokemon";
+  margin: 7px;
+  color: white;
+  background-color: black;
+  box-sizing: border-box;
+  padding:  5px;
+  width: 10%;
+  border: solid;
+  border-radius:20px;
+  border-color: rgba(255, 255, 255, 100);
+  cursor: pointer;
+}
+#boton-Puchamon{
+  font-family: "pokemon";
+  font-weight: bold;
+  color: white;
+  background-color: black;
+  box-sizing: border-box;
+  padding:  5px;
+  width: 10%;
+  border-radius:20px;
+  border-color: red;
+  cursor: pointer;
+}
+#boton-Puchamon:hover{
+  font-family: "pokemon";
+  font-weight: bold;
+  color: white;
+  background-color: black;
+  box-sizing: border-box;
+  padding:  5px;
+  width: 10%;
+  border-radius:20px;
+  border-color: rgba(255, 255, 255, 100);
+  cursor: pointer;
+}
+.botonesbonitos2{
+  font-family: "pokemon";
+  box-sizing: border-box;
+  padding:  5px;
+  width: 40%;
+  background-color: black;
+  border-radius:20px;
+  border: solid;
+  border-color: red;
+
+}
+
+#seleccionar-bicho {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 95vh;
+  align-items: center;
+}
+#mensajes{
+  color: white;
+  font-family: "pokemon";
+  box-sizing: border-box;
+  padding: 10px;
+  padding: 10px;
+  height: 200px;
+  width: 100%;
+}
+.batalla{
+display: flex;
+
+  width: 100px;
+  height: 123.25px;
+
+}
+.imagenespuchamon1{
+display: flex;
+ gap: 15px;
+ 1px 0px 12px 0px;
+}
+.imagenespuchamon2{
+  display: flex;
+ gap: 15px;
+}
+.scroll{
+height: 50%;
+width: 100%;
+background: black;
+opacity: 0.7;
+overflow-y: scroll;
+border-radius: 20px;
+border: solid;
+border-color: red;
+}
+
+.vidas{
+  font-family: "pokemon";
+  font-weight: bold;
+  color: white;
+  background-color: black;
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 18px;
+  width: 35%;
+  border-radius: 20px;
+  border: solid;
+  border-color: red;
+ gap: 14px;
+}
+.logo{
+  src: url("./token_1.png");
+  position: absolute;
+  width: 100px;
+  margin: 0px 0px 350px 1300px;
+}
+
+h3{
+  color: yellow;
+  font-family: "pokemon2";
+  font-weight: bold;
+  background: black;
+  font-size: 35px;
+  box-sizing: border-box;
+  width: 150px;
+  height: 115px;
+  padding:  3px 3px 3px 11px;
+  margin: 10px;
+  line-height: 40px;
+    border: solid;
+    border-radius: 10px;
+}
+h2{
+  color: yellow;
+  font-family: "pokemon2";
+  font-size: bold;
+  background: black;
+  box-sizing: border-box;
+  width: 130px;
+  height: 80px;
+  padding:  10px;
+  margin: 10px;
+  line-height: 27px;
+  border: solid;
+  border-radius: 10px;
+}
+input{
+  display: none;
+}
+.botonesbonitos{
+  color: white;
+  font-family: "pokemon";
+  background-color: black;
+  box-sizing: border-box;
+  padding:  8px;
+  margin: 10px;
+  width: 150px;
+  height: 35px;
+  border-radius:20px;
+  border-color: red;
+  border-style: double;
+  cursor: pointer;
+}
+.botonesbonitos:hover{
+  color: white;
+  font-family: "pokemon";
+  background-color: black;
+  box-sizing: border-box;
+  padding:  8px;
+  margin: 10px;
+  width: 150px;
+  height: 35px;
+  border-radius:20px;
+  border-color: rgba(255, 255, 255, 100);
+  border-style: double;
+  cursor: pointer;
+}
+
+
+.tarjetadepuchamon img{
+
+  width: 126.917px;
+  height: 119px;
+  }
+
+.tarjetadepuchamon1{
+  font-family: "pokemon";
+  line-height: 30px;
+  font-size: 12px;
+  width: 279px;
+  height:  150px;
+  background-color: black;
+  margin: 10px;
+  color: white;
+  padding: 0px 9px 10px 17px;
+  box-sizing: border-box;
+  border: solid;
+  display: flex;
+  border-radius: 10px;
+  border-color: red;
+  cursor: pointer;
+  }
+  .tarjetadepuchamon1:hover{
+    font-family: "pokemon";
+    line-height: 30px;
+    font-size: 12px;
+    width: 279px;
+    height:  150px;
+    background-color: black;
+    margin: 10px;
+    color: white;
+    padding: 0px 9px 10px 17px;
+    box-sizing: border-box;
+    border: solid;
+    display: flex;
+    border-radius: 10px;
+    border-color: rgba(255, 255, 255, 100);
+    box-shadow: 0 0 40px rgba(255, 255, 255, 100);
+      cursor: pointer;
+    }
+
+
+    .tarjetadepuchamon2{
+      font-family: "pokemon";
+      line-height: 20px;
+      font-size: 12px;
+      width: 279px;
+      height:  150px;
+      background-color: black;
+      margin: 10px;
+      color: white;
+      padding: 0px 9px 10px 17px;
+      box-sizing: border-box;
+      border: solid;
+      display: flex;
+      border-radius: 10px;
+      border-color: red;
+      cursor: pointer;
+      }
+      .tarjetadepuchamon2:hover{
+        font-family: "pokemon";
+        line-height: 20px;
+        font-size: 12px;
+        width: 279px;
+        height:  150px;
+        background-color: black;
+        margin: 10px;
+        color: white;
+        padding: 0px 9px 10px 17px;
+        box-sizing: border-box;
+        border: solid;
+        display: flex;
+        border-radius: 10px;
+        border-color: rgba(255, 255, 255, 100);
+        box-shadow: 0 0 40px rgba(255, 255, 255, 100);
+          cursor: pointer;
+      }
+
+
+      .tarjetadepuchamon3{
+        font-family: "pokemon";
+        line-height: 30px;
+        font-size: 12px;
+        width: 279px;
+        height:  150px;
+        background-color: black;
+        margin: 10px;
+        color: white;
+        padding: 0px 9px 10px 17px;
+        box-sizing: border-box;
+        border: solid;
+        display: flex;
+        border-radius: 10px;
+        border-color: red;
+        cursor: pointer;
+        }
+        .tarjetadepuchamon3:hover{
+          font-family: "pokemon";
+          line-height: 30px;
+          font-size: 12px;
+          width: 279px;
+          height:  150px;
+          background-color: black;
+          margin: 10px;
+          color: white;
+          padding: 0px 9px 10px 17px;
+          box-sizing: border-box;
+          border: solid;
+          display: flex;
+          border-radius: 10px;
+          border-color: rgba(255, 255, 255, 100);
+          box-shadow: 0 0 40px rgba(255, 255, 255, 100);
+            cursor: pointer;
+        }
+
+        .tarjetadepuchamon4{
+          font-family: "pokemon";
+          line-height: 25px;
+          font-size: 12px;
+          width: 279px;
+          height:  150px;
+          background-color: black;
+          margin: 10px;
+          color: white;
+          padding: 0px 9px 10px 17px;
+          box-sizing: border-box;
+          border: solid;
+          display: flex;
+          border-radius: 10px;
+          border-color: red;
+          cursor: pointer;
+          }
+          .tarjetadepuchamon4:hover{
+            font-family: "pokemon";
+            line-height: 25px;
+            font-size: 12px;
+            width: 279px;
+            height:  150px;
+            background-color: black;
+            margin: 10px;
+            color: white;
+            padding: 0px 9px 10px 17px;
+            box-sizing: border-box;
+            border: solid;
+            display: flex;
+            border-radius: 10px;
+            border-color: rgba(255, 255, 255, 100);
+            box-shadow: 0 0 40px rgba(255, 255, 255, 100);
+              cursor: pointer;
+          }
+          .tarjetadepuchamon5{
+            font-family: "pokemon";
+            line-height: 30px;
+            font-size: 12px;
+            width: 279px;
+            height:  150px;
+            background-color: black;
+            margin: 10px;
+            color: white;
+            padding: 0px 9px 10px 17px;
+            box-sizing: border-box;
+            border: solid;
+            display: flex;
+            border-radius: 10px;
+            border-color: red;
+            cursor: pointer;
+
+            }
+            .tarjetadepuchamon5:hover{
+              font-family: "pokemon";
+              line-height: 30px;
+              font-size: 12px;
+              width: 279px;
+              height:  150px;
+              background-color: black;
+              margin: 10px;
+              color: white;
+              padding: 0px 9px 10px 17px;
+              box-sizing: border-box;
+              border: solid;
+              display: flex;
+              border-radius: 10px;
+              border-color: rgba(255, 255, 255, 100);
+              box-shadow: 0 0 40px rgba(255, 255, 255, 100);
+              cursor: pointer;
+
+            }
+            .tarjetadepuchamon6{
+              font-family: "pokemon";
+              line-height: 30px;
+              font-size: 12px;
+              width: 279px;
+              height:  150px;
+              background-color: black;
+              margin: 10px;
+              color: white;
+              padding: 0px 9px 10px 17px;
+              box-sizing: border-box;
+              border: solid;
+              display: flex;
+              border-radius: 10px;
+              border-color: red;
+              cursor: pointer;
+              }
+              .tarjetadepuchamon6:hover{
+                font-family: "pokemon";
+                line-height: 30px;
+                font-size: 12px;
+                width: 279px;
+                height:  150px;
+                background-color: black;
+                margin: 10px;
+                color: white;
+                padding: 0px 9px 10px 17px;
+                box-sizing: border-box;
+                border: solid;
+                display: flex;
+                border-radius: 10px;
+                border-color: rgba(255, 255, 255, 100);
+                box-shadow: 0 0 40px rgba(255, 255, 255, 100);
+                  cursor: pointer;
+              }
+              .tarjetadepuchamon6:{
+                font-family: "pokemon";
+                line-height: 30px;
+                font-size: 12px;
+                width: 279px;
+                height:  150px;
+                background-color: black;
+                margin: 10px;
+                color: white;
+                padding: 0px 9px 10px 17px;
+                box-sizing: border-box;
+                border: solid;
+                display: flex;
+                border-radius: 10px;
+                border-color: rgba(255, 255, 255, 100);
+                box-shadow: 0 0 40px rgba(255, 255, 255, 100);
+                  cursor: pointer;
+              }
+              .parrafopitochu{
+                width: 151.55px;
+                height: 110px;
+              }
