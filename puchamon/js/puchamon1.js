@@ -53,225 +53,147 @@ let esconderreinicio = document.getElementById('boton-reiniciar')
         botonreinicio.addEventListener("click", reiniciarjuego)
 
 }
-////////////UN DOLOR DE HUEVOS/////////////
-
-
-
-////////////////////////////////////////////////////////////////////////////////
+/////////esta funcion se encarga de reconocer el puchamon seleccionado /////////
 function seleccionarPuchamon() {
-////////////////////////EXTRA////////////////////////////////////////////////
+
 let spanpuchamonjugador = document.getElementById('puchamon-jugador')
 
   if (document.getElementById("fogofast").checked) {
-    mensajedeseleccion("seleccioniste a una bicho de lava con un derrame cerebral")
-   spanpuchamonjugador.innerHTML = "fogofast"
-   let bicho = document.getElementById('seleccionar-bicho')
-     bicho.style.display = "none"
-     activarbotones()
 
+    let bicho = document.getElementById('section-general')
+
+      mensajedeseleccion("seleccioniste a una bicho de lava con un derrame cerebral")
+
+          spanpuchamonjugador.innerHTML = "fogofast"
+
+              bicho.style.display = "none"
+
+     activarbotones() //los botones se descativan al no seleccionar un puchamon, esto se encarga de reactivarlos//
 }
 else if (document.getElementById("splashkat").checked){
-  mensajedeseleccion("tu seleccionaste a un minino de agua metrosexual")
-  spanpuchamonjugador.innerHTML = "splashkat"
-  let bicho = document.getElementById('seleccionar-bicho')
-    bicho.style.display = "none"
-    activarbotones()
+
+    let bicho = document.getElementById('section-general')
+
+        mensajedeseleccion("tu seleccionaste a un minino de agua metrosexual")
+
+          spanpuchamonjugador.innerHTML = "splashkat"
+
+            bicho.style.display = "none"
+
+    activarbotones() //los botones se descativan al no seleccionar un puchamon, esto se encarga de reactivarlos//
 }
 else if (document.getElementById("trigor").checked) {
-  mensajedeseleccion("tu seleccionaste a una chingadera con patas y brazos que claramente usa anabolizantes")
-  spanpuchamonjugador.innerHTML = "trigor"
-  let bicho = document.getElementById('seleccionar-bicho')
-    bicho.style.display = "none"
-    activarbotones()
+
+    let bicho = document.getElementById('section-general')
+
+        mensajedeseleccion("tu seleccionaste a una chingadera con patas y brazos que claramente usa anabolizantes")
+
+            spanpuchamonjugador.innerHTML = "trigor"
+
+              bicho.style.display = "none"
+
+    activarbotones() //los botones se descativan al no seleccionar un puchamon, esto se encarga de reactivarlos//
 }
 else if (document.getElementById("katrish").checked) {
-  mensajedeseleccion("tu seleccionaste a... QUE ABOMINACION ES ESTA?")
-  spanpuchamonjugador.innerHTML = "katrish"
-  let bicho = document.getElementById('seleccionar-bicho')
-    bicho.style.display = "none"
-    activarbotones()
+
+    let bicho = document.getElementById('section-general')
+
+        mensajedeseleccion("tu seleccionaste a... QUE ABOMINACION ES ESTA?")
+
+            spanpuchamonjugador.innerHTML = "katrish"
+
+              bicho.style.display = "none"
+
+    activarbotones() //los botones se descativan al no seleccionar un puchamon, esto se encarga de reactivarlos//
 }
 else if (document.getElementById("trifast").checked) {
-  mensajedeseleccion("tu seleccionaste... algo que deberia ser eliminado con... ¿agua?")
-  spanpuchamonjugador.innerHTML = "trifast"
-  let bicho = document.getElementById('seleccionar-bicho')
-    bicho.style.display = "none"
-    activarbotones()
+
+    let bicho = document.getElementById('section-general')
+
+        mensajedeseleccion("tu seleccionaste... algo que deberia ser eliminado con... ¿agua?")
+
+            spanpuchamonjugador.innerHTML = "trifast"
+
+              bicho.style.display = "none"
+
+    activarbotones() //los botones se descativan al no seleccionar un puchamon, esto se encarga de reactivarlos//
 }
 else if (document.getElementById("pitochu").checked) {
-  mensajedeseleccion("tu seleccionaste a una rata con pilas")
-  spanpuchamonjugador.innerHTML = "pitochu"
-  let bicho = document.getElementById('seleccionar-bicho')
-    bicho.style.display = "none"
-    activarbotones()
+
+    let bicho = document.getElementById('section-general')
+
+        mensajedeseleccion("tu seleccionaste a una rata con pilas")
+
+            spanpuchamonjugador.innerHTML = "pitochu"
+
+              bicho.style.display = "none"
+
+    activarbotones() //los botones se descativan al no seleccionar un puchamon, esto se encarga de reactivarlos//
 }
 
 else{
-  alert("Tal vez no lo parezca pero si das click en cualquiera lo seleccionaras")
-    mensajedeseleccion("Tal vez no lo parezca pero si das click en cualquiera lo seleccionaras")
-desacctivarbotones()
+
+mensajedeseleccion("Tal vez no lo parezca pero si das click en cualquiera lo seleccionaras")
+
+desacctivarbotones()//los botones se descativan al no seleccionar un puchamon//
     }
 puchamonseleccionado()
       }
 
       function puchamonseleccionado(){
+
         if(document.getElementById("fogofast").checked){
+
           puchamonjugador = "fogofast"
-          let seleccionar_putazo = document.getElementById('seleccionar-putazo')
-          seleccionar_putazo.style.display = "block"
+
+            let seleccionar_putazo = document.getElementById('seleccionar-putazo')
+
+              seleccionar_putazo.style.display = "block"
+
         }else if (document.getElementById("splashkat").checked) {
+
           puchamonjugador = "splashkat"
-          let seleccionar_putazo = document.getElementById('seleccionar-putazo')
-          seleccionar_putazo.style.display = "block"
+
+              let seleccionar_putazo = document.getElementById('seleccionar-putazo')
+
+                seleccionar_putazo.style.display = "block"
+
         }else if (document.getElementById("trigor").checked) {
+
             puchamonjugador = "trigor"
-            let seleccionar_putazo = document.getElementById('seleccionar-putazo')
-            seleccionar_putazo.style.display = "block"
+
+              let seleccionar_putazo = document.getElementById('seleccionar-putazo')
+
+                seleccionar_putazo.style.display = "block"
+
         }else if (document.getElementById("katrish").checked) {
+
             puchamonjugador = "katrish"
-            let seleccionar_putazo = document.getElementById('seleccionar-putazo')
-            seleccionar_putazo.style.display = "block"
+
+              let seleccionar_putazo = document.getElementById('seleccionar-putazo')
+
+                seleccionar_putazo.style.display = "block"
+
         }else if (document.getElementById("trifast").checked) {
-            puchamonjugador = "trifast"
-            let seleccionar_putazo = document.getElementById('seleccionar-putazo')
-            seleccionar_putazo.style.display = "block"
+
+              puchamonjugador = "trifast"
+
+                let seleccionar_putazo = document.getElementById('seleccionar-putazo')
+
+                  seleccionar_putazo.style.display = "block"
+
         }else if (document.getElementById("pitochu").checked) {
-            puchamonjugador = "pitochu"
-            let seleccionar_putazo = document.getElementById('seleccionar-putazo')
-            seleccionar_putazo.style.display = "block"
+
+              puchamonjugador = "pitochu"
+
+                let seleccionar_putazo = document.getElementById('seleccionar-putazo')
+
+                  seleccionar_putazo.style.display = "block"
         }
-////////////////////////////////////////////////////////////////////////////////
-    seleccionarpuchamonenemigo()
-////////////////////////////////////////////////////////////////////////////////
+    seleccionarpuchamonenemigo() //la funcion aleatorio ayuda a ramdomizar al enemigo//
+
 }
-function cambiarColorParrafos() {
-
-   var parrafos = document.querySelectorAll(".tarjetadepuchamon1");
-   var parrafos2 = document.querySelectorAll(".tarjetadepuchamon2");
-   var parrafos3 = document.querySelectorAll(".tarjetadepuchamon3");
-   var parrafos4 = document.querySelectorAll(".tarjetadepuchamon4");
-   var parrafos5 = document.querySelectorAll(".tarjetadepuchamon5");
-   var parrafos6 = document.querySelectorAll(".tarjetadepuchamon6");
-
-   if (document.getElementById("fogofast").checked) {
-     parrafos.forEach(function(a) {
-        a.style.borderColor = "rgba(255, 255, 255, 100)";
-     });
-     parrafos2.forEach(function(b) {
-        b.style.borderColor = "red"; // Cambia el color de texto a rojo
-     });
-     parrafos3.forEach(function(c) {
-        c.style.borderColor = "red"; // Cambia el color de texto a rojo
-     });
-     parrafos4.forEach(function(d) {
-        d.style.borderColor = "red"; // Cambia el color de texto a rojo
-     });
-     parrafos5.forEach(function(e) {
-        e.style.borderColor = "red"; // Cambia el color de texto a rojo
-     });
-     parrafos6.forEach(function(f) {
-        f.style.borderColor = "red"; // Cambia el color de texto a rojo
-     });
-   }
-   else if(document.getElementById("splashkat").checked){
-     parrafos2.forEach(function(b) {
-        b.style.borderColor = "rgba(255, 255, 255, 100)";
-     });
-     parrafos.forEach(function(a) {
-        a.style.borderColor = "red"; // Cambia el color de texto a rojo
-     });
-     parrafos3.forEach(function(c) {
-        c.style.borderColor = "red"; // Cambia el color de texto a rojo
-     });
-     parrafos4.forEach(function(d) {
-        d.style.borderColor = "red"; // Cambia el color de texto a rojo
-     });
-     parrafos5.forEach(function(e) {
-        e.style.borderColor = "red"; // Cambia el color de texto a rojo
-     });
-     parrafos6.forEach(function(f) {
-        f.style.borderColor = "red"; // Cambia el color de texto a rojo
-     });
-   }
-   else if(document.getElementById("trigor").checked){
-     parrafos3.forEach(function(c) {
-        c.style.borderColor = "rgba(255, 255, 255, 100)";
-     });
-     parrafos.forEach(function(a) {
-        a.style.borderColor = "red"; // Cambia el color de texto a rojo
-     });
-     parrafos2.forEach(function(b) {
-        b.style.borderColor = "red"; // Cambia el color de texto a rojo
-     });
-     parrafos4.forEach(function(d) {
-        d.style.borderColor = "red"; // Cambia el color de texto a rojo
-     });
-     parrafos5.forEach(function(e) {
-        e.style.borderColor = "red"; // Cambia el color de texto a rojo
-     });
-     parrafos6.forEach(function(f) {
-        f.style.borderColor = "red"; // Cambia el color de texto a rojo
-     });
-   }else if(document.getElementById("katrish").checked){
-     parrafos4.forEach(function(d) {
-        d.style.borderColor = "rgba(255, 255, 255, 100)";
-     });
-     parrafos.forEach(function(a) {
-        a.style.borderColor = "red"; // Cambia el color de texto a rojo
-     });
-     parrafos2.forEach(function(b) {
-        b.style.borderColor = "red"; // Cambia el color de texto a rojo
-     });
-     parrafos3.forEach(function(c) {
-        c.style.borderColor = "red"; // Cambia el color de texto a rojo
-     });
-     parrafos5.forEach(function(e) {
-        e.style.borderColor = "red"; // Cambia el color de texto a rojo
-     });
-     parrafos6.forEach(function(f) {
-        f.style.borderColor = "red"; // Cambia el color de texto a rojo
-     });
-   }else if(document.getElementById("trifast").checked){
-     parrafos5.forEach(function(e) {
-        e.style.borderColor = "rgba(255, 255, 255, 100)";
-     });
-     parrafos.forEach(function(a) {
-        a.style.borderColor = "red"; // Cambia el color de texto a rojo
-     });
-     parrafos2.forEach(function(b) {
-        b.style.borderColor = "red"; // Cambia el color de texto a rojo
-     });
-     parrafos3.forEach(function(c) {
-        c.style.borderColor = "red"; // Cambia el color de texto a rojo
-     });
-     parrafos4.forEach(function(d) {
-        d.style.borderColor = "red"; // Cambia el color de texto a rojo
-     });
-     parrafos6.forEach(function(f) {
-        f.style.borderColor = "red"; // Cambia el color de texto a rojo
-     });
-   }else if(document.getElementById("pitochu").checked){
-     parrafos6.forEach(function(f) {
-        f.style.borderColor = "rgba(255, 255, 255, 100)";
-     });
-     parrafos.forEach(function(a) {
-        a.style.borderColor = "red"; // Cambia el color de texto a rojo
-     });
-     parrafos2.forEach(function(b) {
-        b.style.borderColor = "red"; // Cambia el color de texto a rojo
-     });
-     parrafos3.forEach(function(c) {
-        c.style.borderColor = "red"; // Cambia el color de texto a rojo
-     });
-     parrafos4.forEach(function(d) {
-        d.style.borderColor = "red"; // Cambia el color de texto a rojo
-     });
-     parrafos5.forEach(function(e) {
-        e.style.borderColor = "red"; // Cambia el color de texto a rojo
-     });
-   }
-
-   }
+//el enemigo aleatorio es seleccionado al instante que el jugador selecciona su puchamon//
 function seleccionarpuchamonenemigo(){
   let ataqueramdon = aleatorio(1,6)
   let seleccionarpuchamonenemigo = document.getElementById('puchamon-enemigo')
@@ -321,7 +243,7 @@ function ataquerayo() {
   ataquejugador = "pilas consoladoras"
     ataqueenemigo()
 }
-//////////////////////////ataques enemigos bien ramdon//////////////////////////
+//Ataques enemigos aleatorios //
 function ataqueenemigo(){
   wearamdon = aleatorio(1,6)
 if (wearamdon == 1) {
@@ -345,6 +267,7 @@ else if (wearamdon == 2) {
 }
 combate()
 }
+//me costo mucho "balancear" esto porque es la primera vez que hago esto//
 function combate(){
 let spanvidasenemigas = document.getElementById('vidasenemigas')
 let spanvidasjugador = document.getElementById('vidasjugador')
@@ -422,73 +345,66 @@ else {
 }
   revisiondehp()
   }
-//////////////////////revisar vidas////////////////////////////////////////////////
+////////esta funcion revisa la vida del jugador y el enemigo y define el ganador/////////
 function revisiondehp() {
   if (vidasjugador == 0) {
-    crearmensajefinal(" ha sido conectado exitosamente al wifi de dios")
+    crearmensajefinal(" ha sido conectado exitosamente al wifi de dios")//perder//
   }else if(vidasenemigas == 0) {
-    crearmensajefinal(", no mames era vencerlo no jugar a la matanza de texas!!!!")
+    crearmensajefinal(", no mames era vencerlo no jugar a la matanza de texas!!!!")//ganar//
   }
 }
-////////////////////////////////////////////////////////////////////////////////
+////////////esta funcion es la que muestra un dialogo especifico para cada Puchamon//////////////
 function mensajedeseleccion(seleccion){
-  let ocultarborde = document.getElementById('scroll')
-  ocultarborde.style.display = "block"
-  let ocultarpadding = document.getElementById('mensajes')
-  ocultarpadding.style.display = "block"
-  let sectionmensajes = document.getElementById('mensajes')
-  let parrafo = document.createElement("p")
-  parrafo.innerHTML = seleccion
-  sectionmensajes.appendChild(parrafo)
+      let ocultarborde = document.getElementById('scroll')
+
+            ocultarborde.style.display = "block"
+
+      let ocultarpadding = document.getElementById('mensajes')
+
+            ocultarpadding.style.display = "block"
+
+      let sectionmensajes = document.getElementById('mensajes')
+
+      let parrafo = document.createElement("p")
+
+            parrafo.innerHTML = seleccion
+
+              sectionmensajes.appendChild(parrafo)
 }
-////////////////////////////////////////////////////////////////////////////////
+//////////////////mensajes de combate que aparecen en "la caja de historial"////////////////////////////
 function crearmensaje(resultado){
-  let ocultarborde = document.getElementById('scroll')
-  ocultarborde.style.display = "block"
+
   let ocultarpadding = document.getElementById('mensajes')
-  ocultarpadding.style.display = "block"
+
+        ocultarpadding.style.display = "block"
+
   let sectionmensajes = document.getElementById('mensajes')
+
   let parrafo = document.createElement("p")
+
   parrafo.innerHTML = "tu puchamon uso " + ataquejugador + ", el puchamon del enemigo ataco con " + ataquepuchamonaleatorio + " -" + resultado
+
   sectionmensajes.appendChild(parrafo)
 }
 ////////////////////////////////////////////////////////////////////////////////
 function crearmensajefinal(resultadofinal){
+  let esconderreinicio = document.getElementById('boton-reiniciar')
   let ocultarborde = document.getElementById('scroll')
-  ocultarborde.style.display = "block"
   let ocultarpadding = document.getElementById('mensajes')
-  ocultarpadding.style.display = "block"
   let sectionmensajes = document.getElementById('mensajes')
   let parrafo = document.createElement("p")
-  parrafo.innerHTML = puchamonjugador + resultadofinal
-  sectionmensajes.appendChild(parrafo)
-  let esconderreinicio = document.getElementById('boton-reiniciar')
+
+      ocultarborde.style.display = "block"
+      ocultarpadding.style.display = "block"
+
+      parrafo.innerHTML = puchamonjugador + resultadofinal
+
+          sectionmensajes.appendChild(parrafo)
+
     esconderreinicio.style.display = "block"
-///////////////////esto continua lo de arriba///////////////////////////////////
-  let botonfuego = document.getElementById('boton-fuego')
 
-      botonfuego.disabled = true
-
-  let botonagua = document.getElementById('boton-agua')
-
-      botonagua.disabled = true
-
-  let botontierra = document.getElementById('boton-planta')
-
-      botontierra.disabled = true
-
-    let botonmutante = document.getElementById('boton-mutante')
-
-      botonmutante.disabled = true
-
-    let botonacido = document.getElementById('boton-acido')
-
-      botonacido.disabled = true
-
-    let botonrayo = document.getElementById('boton-rayo')
-
-     botonrayo.disabled = true
-     let esconderlogo = document.getElementById('juegologo')
+  desacctivarbotones()
+  //se que se puede acortar pero aun no tengo claro como hacerlo//
 }
 function desacctivarbotones(){
   let botonfuego = document.getElementById('boton-fuego')
@@ -516,6 +432,7 @@ function desacctivarbotones(){
      botonrayo.disabled = true
      let esconderlogo = document.getElementById('juegologo')
 }
+//se que se puede acortar pero aun no tengo claro como hacerlo// x2
 function activarbotones(){
   let botonfuego = document.getElementById('boton-fuego')
 
@@ -542,12 +459,11 @@ function activarbotones(){
      botonrayo.disabled = false
      let esconderlogo = document.getElementById('juegologo')
 }
-
-////////////////////////////////////////////////////////////////////////////////
+//////////////////////////Reinicio//////////////////////////////////
 function reiniciarjuego(){
   location.reload()
 }
-////////////////////////////////////////////////////////////////////////////////
+//////////////////////Ramdomizador///////////////////////////////////////
 function aleatorio(min, max) {
 return Math.floor( Math.random() * (max - min+1) + min)
 }

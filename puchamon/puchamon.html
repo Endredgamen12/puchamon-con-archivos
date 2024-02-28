@@ -3,98 +3,132 @@
   <head>
     <meta charset="utf-8">
       <title> Puchamon 🔥💧🌱 </title>
-      <script src="js/puchamon1.js">
 
-
-      </script>
       <link rel = "stylesheet" href = "./puchamoon.css">
   </head>
 
     <body> <img src="./token_1.png" class="logo">
 
-        <section id="seleccionar-bicho">
+          <!-- Boton amarillo en la parte superior -->
+
+        <section id="section-general">
         <h2>Elige el Puchamon</h2>
 
+<!-- tarjetas donde se encuentrans los fakemon nombres 1/2 -->
         <div class="imagenespuchamon1">
-          <label id="tarjetadepuchamon" onclick="cambiarColorParrafos()" onclick="valornumeral()" class="tarjetadepuchamon1" for="fogofast">
+                          <!-- fogofast -->
+        <input type="radio" name="puchamon" id="fogofast" >
 
-          <p id="parrafofogofast" class="parrafo">fogofast🔥<br>
-          fue necesaria la cirugia</p>
+          <label id="tarjetadepuchamon"  class="tarjetadepuchamon" for="fogofast">
 
-                  <img src="./assets/fogofast.png" alt="img-fogofast">
+               <img src="./assets/fogofast.png" alt="img-fogofast">
 
-            <input type="radio"  name="puchamon" id="fogofast" value="1"></label>
+                  <p id="parrafofogofast" class="parrafo">fogofast🔥<br>
+                                  fue necesaria la cirugia</p>
+                    </label>
+                          <!-- fogofast -->
 
-          <label  id="tarjetadepuchamon" onclick="cambiarColorParrafos()" class="tarjetadepuchamon2" for="splashkat">
+                          <!-- splashkat -->
+        <input type="radio" name="puchamon" id="splashkat" value="2">
 
-           <p class="parrafo">splashkat💧<br>
-           SI, su cola es un martillo</p>
+          <label  id="tarjetadepuchamon" onclick="cambiarColorParrafos()" class="tarjetadepuchamon" for="splashkat">
 
-                  <img src="./assets/splashkat.png" alt="img-splashkat">
+              <img src="./assets/splashkat.png" alt="img-splashkat">
 
-                  <input type="radio" name="puchamon" id="splashkat" value="2"></label>
+                <p class="parrafo">splashkat💧<br>
+                 SI, su cola es un martillo</p>
 
-          <label id="tarjetadepuchamon" onclick="cambiarColorParrafos()" class="tarjetadepuchamon3" for="trigor">
+                      </label>
+                          <!-- splashkat -->
 
-            <p class="parrafo">trigor🌱<br>
-            le gustan los esteroides</p>
-                  <img src="./assets/trigor.png" alt="img-trigor">
+                          <!-- trigor -->
+       <input type="radio" name="puchamon" id="trigor" value="3">
 
-            <input type="radio" name="puchamon" id="trigor" value="3"></label>
+          <label id="tarjetadepuchamon" onclick="cambiarColorParrafos()" class="tarjetadepuchamon" for="trigor">
+
+              <img src="./assets/trigor.png" alt="img-trigor">
+
+                <p class="parrafo">trigor🌱<br>
+
+                  le gustan los esteroides</p>
+            </label>
+                          <!-- trigor -->
               </div>
+
+
+<!-- tarjetas donde se encuentrans los fakemon nombres 2/2 -->
               <div class="imagenespuchamon2">
-          <label id="tarjetadepuchamon" onclick="cambiarColorParrafos()"  class="tarjetadepuchamon4" for="katrish">
+                          <!-- katrish -->
+      <input type="radio" name="puchamon" id="katrish" value="4">
 
-            <p class="parrafoacido">katrish💉<br>
-            No enserio ¿que es esto?</p>
-                  <img src="./assets/katrish.png" alt="img-katrish">
+          <label id="tarjetadepuchamon" onclick="cambiarColorParrafos()"  class="tarjetadepuchamon" for="katrish">
 
-            <input type="radio" name="puchamon" id="katrish" value="4"></label>
-          <label id="tarjetadepuchamon" onclick="cambiarColorParrafos()" class="tarjetadepuchamon5" for="trifast">
+              <img src="./assets/katrish.png" alt="img-katrish">
+
+                <p class="parrafoacido">katrish💉<br>
+                  No enserio ¿que es esto?</p>
+            </label>
+                          <!-- katrish -->
+
+                          <!-- trifast -->
+      <input type="radio" name="puchamon" id="trifast" value="5">
+
+          <label id="tarjetadepuchamon" onclick="cambiarColorParrafos()" class="tarjetadepuchamon" for="trifast">
+
+              <img src="./assets/trifast.png" alt="img-trifast">
 
               <p class="parrafo">trifast☣️<br>
               ¿De donde salio esto?</p>
+            </label>
+                          <!-- trifast -->
 
-                  <img src="./assets/trifast.png" alt="img-trifast">
+                          <!-- pitochu -->
 
-            <input type="radio" name="puchamon" id="trifast" value="5"></label>
+            <input type="radio" name="puchamon" id="pitochu" value="6">
 
-          <label id="tarjetadepuchamon" onclick="cambiarColorParrafos()" class="tarjetadepuchamon6" for="pitochu">
+          <label id="tarjetadepuchamon" onclick="cambiarColorParrafos()" class="tarjetadepuchamon" for="pitochu">
+
+              <img src="./assets/pitochu.png" alt="img-pitochu">
 
                 <p class="parrafopitochu">pitochu⚡ <br>
                 LE ENCANTA COMER MIERDA!!!</p>
-
-                    <img src="./assets/pitochu.png" alt="img-pitochu">
-
-            <input type="radio" name="puchamon" id="pitochu" value="6"></label>
+            </label>
+                         <!-- pitochu -->
         </div>
-          <button id="boton-Puchamon"> eligir </button>
+
+
+      <button id="boton-Puchamon"> eligir </button>
+<!-- boton de seleccion (este da pie al inicio del juego) -->
           </section>
+
+<!-- Inicio del combate -->
               <section id="seleccionar-putazo">
 
             <h3>Elige el putazo</h3>
-
+<!-- Contador de vidas del  jugador y el enemigo -->
         <p class="vidas">tu puchamon <span id="puchamon-jugador"></span> tiene <span id="vidasjugador">3</span> vidas</p>
         <p class="vidas">el puchamon <span id="puchamon-enemigo"></span> del enemigo <span id="vidasenemigas">3</span> vidas</p>
-
+<!-- ataques del juego para el combate -->
         <p id="botonesbonitos" class="botonesbonitos2">
-                <button id="boton-fuego" class="botonesbonitos"> fuego🔥</button>
-                <button id="boton-agua" class="botonesbonitos"> agua💧</button>
-                <button id="boton-planta" class="botonesbonitos"> planta🌱</button>
-                <button id="boton-mutante" class="botonesbonitos"> mutageno☣️</button>
-                <button id="boton-acido" class="botonesbonitos"> acido💉</button>
-                <button id="boton-rayo" class="botonesbonitos"> rayo⚡</button>
+                <button id="boton-fuego" class="botonesbonitos" id="ataquesvarios"> fuego🔥</button>
+                <button id="boton-agua" class="botonesbonitos" id="ataquesvarios"> agua💧</button>
+                <button id="boton-planta" class="botonesbonitos" id="ataquesvarios"> planta🌱</button>
+                <button id="boton-mutante" class="botonesbonitos" id="ataquesvarios"> mutageno☣️</button>
+                <button id="boton-acido" class="botonesbonitos" id="ataquesvarios"> acido💉</button>
+                <button id="boton-rayo" class="botonesbonitos" id="ataquesvarios"> rayo⚡</button>
         </p>
-
       </section >
+      <!-- Caja de historial del combate -->
             <div id="scroll" class="scroll">
             <section id="mensajes" >
               </div>
             </section>
-
+    <!-- explicar esto me haria sentir estupido -->
         <section id = "reiniciar"  class="reiniciar">
           <button id="boton-reiniciar">reiniciar</button>
 
-        </section>
+            </section>
+          <script src="js/puchamon1.js"></script>
       </body>
+
 </html>
